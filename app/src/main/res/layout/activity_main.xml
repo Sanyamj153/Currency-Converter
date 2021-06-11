@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="400dp"-->
+<!--            android:id="@+id/currencyimage"-->
+<!--            android:layout_height="223dp"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:src="@drawable/usdtoinr"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textUSD"
+            android:layout_marginTop="15dp"
+            android:text="Please enter USD value"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="@color/teal_200"
+            android:fontFamily="serif"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="USD"
+            android:id="@+id/editText"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:inputType="number"
+            android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/convertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="convertCurrency"
+                android:fontFamily="cursive"
+                android:text="CONVERT"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/showingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCAD"
+            android:layout_marginTop="15dp"
+            android:text="Please enter CAD value"
+            android:textColor="@color/teal_200"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CAD"
+            android:id="@+id/editTextCAD"
+            android:inputType="number"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="convertCurrencyCAD"
+            android:fontFamily="cursive"
+            android:id="@+id/convertButtonCAD"
+            android:text="CONVERT"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/showingValueCAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAUD"
+            android:layout_marginTop="15dp"
+            android:text="Please enter AUD value"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:fontFamily="serif"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AUD"
+            android:id="@+id/editTextAUD"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="convertCurrencyAUD"
+            android:fontFamily="cursive"
+            android:id="@+id/convertButtonAUD"
+            android:text="CONVERT"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/showingValueAUD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAED"
+            android:layout_marginTop="15dp"
+            android:text="Please enter AED value"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:fontFamily="serif"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AED"
+            android:id="@+id/editTextAED"
+            android:inputType="number"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="convertCurrencyAED"
+            android:id="@+id/convertButtonAED"
+            android:fontFamily="cursive"
+            android:text="CONVERT"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/showingValueAED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEuro"
+            android:layout_marginTop="15dp"
+            android:text="Please enter Euro value"
+            android:fontFamily="serif"
+            android:layout_gravity="center_horizontal"
+            android:textSize="29dp"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Euro"
+            android:id="@+id/editTextEuro"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="convertCurrencyEuro"
+            android:fontFamily="cursive"
+            android:id="@+id/convertButtonEuro"
+            android:text="CONVERT"
+            android:textSize="30dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/showingValueEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</ScrollView>
